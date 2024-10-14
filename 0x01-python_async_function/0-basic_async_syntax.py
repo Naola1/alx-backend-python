@@ -2,6 +2,7 @@
 import asyncio
 import random
 
+
 async def wait_random(max_delay: int = 10) -> float:
     """
     Asynchronous function that waits for a random delay and returns the delay.
@@ -11,7 +12,7 @@ async def wait_random(max_delay: int = 10) -> float:
 
     Returns:
         float: The actual delay time in seconds.
-    
+
     Example:
         >>> import asyncio
         >>> delay = asyncio.run(wait_random(5))
