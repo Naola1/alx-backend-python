@@ -12,11 +12,6 @@ async def wait_random(max_delay: int = 10) -> float:
 
     Returns:
         float: The actual delay time in seconds.
-
-    Example:
-        >>> import asyncio
-        >>> delay = asyncio.run(wait_random(5))
-        >>> print(f"Waited for {delay} seconds")
     """
     delay = max_delay * random.random()
     await asyncio.sleep(delay)
